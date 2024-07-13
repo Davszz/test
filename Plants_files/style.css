@@ -1,0 +1,595 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #F5F5F5;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+p{
+  font-family: Inter, Arial, sans-serif;
+}
+
+.span-green{
+  color: #499A18;
+}
+/* Header */
+
+.header{
+  background-color: #EDF2EC;
+  height: 134px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 110px;
+  margin-right: 111px;
+  margin-top: 40px;
+}
+
+.header-icon{
+  display: flex;
+  flex-direction: row;
+  background-color: #EDF2EC;
+  margin-top: 10px;
+}
+
+.header-icon img{
+  margin-top: 1px;
+  margin-right: 2px;
+}
+
+.header-icon >p{
+  font-family: Inika, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.nav{
+  display: flex;
+  background-color: #EDF2EC;
+  font-family: Inika, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #010201;
+  margin-top: 1px;
+}
+
+.nav-list{
+  display: flex;
+  column-gap: 46px;
+  list-style-type: none;
+}
+
+.nav-item{
+  display: flex;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.nav-item:hover{
+  font-weight: 700;
+  color:#E06733;
+}
+
+.nav-item-about{
+  margin-right: 2px;
+}
+
+.nav-button{
+  display: none;
+}
+
+/* Main */
+.main{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Welcome */
+.welcome{
+  background-color: #EDF2EC;
+  padding-bottom: 57px;
+}
+
+.welcome-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 101px;
+  margin-right: 109px;
+}
+
+.img-welcome{
+  display: flex;
+  margin-top: 55px;
+}
+
+.text-welcome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 61px;
+}
+
+.table-of-contents{
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+  max-width: 549px;
+  margin-bottom: 24px;
+}
+
+.table-of-subcontinents{
+  color: #636060;
+  font-family: Inter, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  max-width: 525px;
+  margin-bottom: 47px;
+}
+
+.button-learn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter, Arial, sans-serif;
+  background-color: none;
+  width: 158px;
+  height: 44px;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  transition: background-color 0.15s, color 0.15s;
+  font-size: 16px;
+  max-width: 400;
+  background-color: #EDF2EC;
+}
+
+.button-learn:hover,
+.prises-button:hover,
+.service-button:hover{
+  color: #FFFFFF;
+  background-color: #E06733;
+  cursor: pointer;
+}
+/* About*/
+.about{
+  background-color: #FFFFFF;
+  padding-bottom: 94px;
+} 
+
+.about-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 109px;
+}
+
+.text-about{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin-top: 128px;
+}
+
+.subheader-text{
+  font-family: Inika, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  color: #499A18;
+  margin-bottom: 8px;
+  max-width: 463px;
+}
+
+.description-text{
+  font-family: Inter, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 30px;
+  max-width: 605px;
+}
+
+.about-house-plant{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 109px;
+  margin-top: 93px;
+}
+/* Service */
+.service-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF2EC;
+  padding-bottom: 121px;
+}
+
+.service-head{
+  display: flex;
+  margin-left: 109px;
+}
+
+.service-text{
+  display: flex;
+  font-family: Inika, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  color: #499A18;
+  width: 400px;
+  margin-top: 40px;
+}
+
+.service-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 48px;
+  margin-top: 10px;
+}
+
+.service-button,
+.prises-button{
+  font-family: Inika, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #E06733;
+  width: 161px;
+  height: 50px;
+  border: 1px;
+  border-style: solid;
+  border-color: #E06733;
+  border-radius: 5px;
+  margin-right: 38px;
+  background-color: #EDF2EC;
+  transition: background-color 0.15s, color 0.15s;
+}
+
+.service-button.gardens,
+.service-button.planting{
+  padding-right: 10px;
+}
+
+.service-flex-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 48px 108px 0px 109px;
+  row-gap: 54px;
+}
+
+.picture-flex{
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  width: 330px;
+  height: 450px;
+}
+
+.picture-picture{
+  display: inline-flex;
+}
+
+.picture-info{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid #E3E1D5;
+  border-radius: 0px 0px 20px 20px;
+  width: 328px;
+  height: 100px;
+}
+
+.picture-subheader,
+.picture-subheader-lc,
+.picture-subheader-pl{
+  font-family: Inter, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #E06733;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  width: 215px;
+  margin-left: 56px;
+}
+
+.picture-subheader-lc{
+  margin-left: 53px;
+}
+
+.picture-subheader-pl{
+  margin-top: 6px;
+  margin-left: 56px;
+}
+
+.picture-description,
+.picture-description-lc,
+.picture-description-pl{
+  font-family: Inter, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #717171;
+  margin-top: 12px;
+}
+
+.picture-description{
+  margin-top: 12px;
+  margin-right: 2px;
+}
+
+.picture-description-pl{
+  margin-right: 3px;
+}
+
+.picture-description-lc{
+  margin-right: 5px;
+}
+/* Price */
+.price-container{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 108px;
+  background-color: #FFFFFF;
+}
+
+.left-price{
+  display: flex;
+  flex-direction: column;
+  margin-left: 109px;
+}
+
+.subheader-price{
+  display: flex;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 38px;
+}
+
+.price-accordion{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 282px;
+  width: 332px;
+  border: 1px solid #E3E1D5;
+  border-radius: 20px;
+  margin-top: 28px;
+}
+
+.accordion-sheet-basic,
+.accordion-sheet-standart,
+.accordion-sheet-pro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 50px;
+  background-color: #EDF2EC;
+  border-radius: 20px;
+}
+
+.accordion-sheet-basic >p,
+.accordion-sheet-standart >p,
+.accordion-sheet-pro >p{
+  color: #000000;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-left: 39px;
+}
+
+.accordion-sheet-pro >p,
+.accordion-sheet-standart >p{
+  margin-bottom: 22px;
+}
+
+.accordion-sheet-pro >p{
+  margin-bottom: 25px;
+}
+
+.circle-arrow,
+.circle-arrow-standart,
+.circle-arrow-pro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #D9D9D9;
+  margin-right: 40px;
+}
+
+.text-price{
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  margin-right: 90px;
+  margin-top: 7px;
+}
+
+.price-description{
+  max-width: 452px;
+  text-align: right;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-top: 32px;
+  line-height: 50px;
+  margin-right: 19px;
+}
+
+.prises-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inika, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #E06733;
+  width: 162px;
+  height: 50px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin-right: 19px;
+  padding-right: 8px;
+}
+
+.plant-price-img{
+  display: flex;
+  justify-content:flex-end;
+  padding-top: 35px;
+  margin-right: 14px;
+}
+/*Contacts*/
+.contacts-container{
+  display: flex;
+  justify-content: space-between;
+  background-color: #EDF2EC;
+}
+
+.img-contacts{
+  display: flex;
+  align-items: flex-end;
+  margin-left: 109px;
+  margin-top: 54px;
+}
+
+.text-contacts{
+  display: flex;
+  max-width: 195px;
+  font-family: Inika, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #499A18;
+  margin-top: 61px;
+  margin-left: 45px;
+}
+
+.right-contacts{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 450px;
+  height: 50px;
+  background-color: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Inter, Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #717171;
+  margin-top: 148px;
+  margin-right: 109px;
+}
+
+.city-text{
+  margin-left: 20px;
+  margin-top: 22px;
+  letter-spacing: 1px;
+}
+
+.circle-arrow-contacts{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  border: none;
+  background-color: #AEA1A1;
+  margin-right: 35px;
+}
+/* footer */
+.footer{
+  background-color: #FFFFFF;
+}
+
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 109px;
+  margin-right: 83px;
+  height: 130px;
+}
+
+.footer-info{
+  display: flex;
+  width: 714px;
+  justify-content: space-between;
+}
+
+.my-git{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.rs-school{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-git-text,
+.create-year-sim{
+	font-family: Inter, Arial, sans-serif;
+	font-size: 20px; 
+	color: #000000;
+  text-decoration: none;
+}
+
+.create-year-sim{
+ margin-right: 21px;
+}
+.create-year-text{
+	font-family: Inter, Arial, sans-serif;
+	font-size: 20px; 
+	color: #000000;
+	text-align: center;
+  margin-right: 20px;
+}
+
+.nav-list-footer{
+  display: flex;
+  margin-top: 35px;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: 13px;
+  margin-bottom: 30px;
+}
+
+.nav-item-footer{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 27px;
+}
+
+.nav-item-footer.insta{
+  margin-left: 2px;
+}
+
+.nav-item-footer.face{
+  margin-left: 2px;
+}
+
+.nav-item-footer.twit{
+  margin-left: 2px;
+  margin-right: 23px;
+}
